@@ -1,0 +1,192 @@
+# =========================================================
+# Environment / Secrets
+# =========================================================
+
+.env
+.env.*
+!.env.example
+
+*.key
+*.pem
+*.crt
+
+# =========================================================
+# OS Files
+# =========================================================
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================================================
+# IDE / Editor
+# =========================================================
+
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================================================
+# Logs
+# =========================================================
+
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================================================
+# Laravel / PHP
+# =========================================================
+
+laravel/vendor/
+
+laravel/.env
+laravel/.env.*
+!laravel/.env.example
+
+laravel/storage/*.key
+
+laravel/storage/framework/cache/*
+laravel/storage/framework/sessions/*
+laravel/storage/framework/views/*
+
+laravel/storage/logs/*
+
+laravel/bootstrap/cache/*.php
+
+laravel/public/storage
+
+laravel/.phpunit.result.cache
+
+# Laravel frontend dependencies if used
+laravel/node_modules/
+laravel/public/build/
+laravel/public/hot
+
+# =========================================================
+# Node.js Service
+# =========================================================
+
+node-service/node_modules/
+
+node-service/.env
+node-service/.env.*
+!node-service/.env.example
+
+node-service/dist/
+node-service/build/
+node-service/coverage/
+
+# =========================================================
+# Python / FastAPI
+# =========================================================
+
+python/__pycache__/
+python/**/*.py[cod]
+python/*.py[cod]
+
+python/.env
+python/.env.*
+!python/.env.example
+
+python/.venv/
+python/venv/
+python/env/
+
+python/.pytest_cache/
+python/.mypy_cache/
+python/.ruff_cache/
+
+python/htmlcov/
+python/.coverage
+python/coverage.xml
+
+# =========================================================
+# Python global patterns
+# =========================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+.venv/
+venv/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# =========================================================
+# Composer
+# =========================================================
+
+vendor/
+
+# =========================================================
+# Node global
+# =========================================================
+
+node_modules/
+
+# =========================================================
+# Docker local overrides
+# =========================================================
+
+compose.override.yml
+docker-compose.override.yml
+
+# =========================================================
+# Temporary / Cache Files
+# =========================================================
+
+*.tmp
+*.temp
+*.cache
+
+tmp/
+temp/
+
+# =========================================================
+# Test / Coverage
+# =========================================================
+
+coverage/
+.phpunit.cache/
+
+# =========================================================
+# Database local files
+# =========================================================
+
+*.sqlite
+*.sqlite3
+*.db
+
+# =========================================================
+# Uploaded / Generated PDF data
+# Do not commit runtime user files
+# =========================================================
+
+laravel/storage/app/pdfs/*
+!laravel/storage/app/pdfs/.gitkeep
+
+laravel/storage/app/private/pdfs/*
+!laravel/storage/app/private/pdfs/.gitkeep
+
+# =========================================================
+# Docker runtime data
+# =========================================================
+
+mysql_data/
+valkey_data/
+
+# =========================================================
+# Misc
+# =========================================================
+
+*.bak
+*.old
+*.orig
